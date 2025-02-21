@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--onclick
+    ondbclick
+    onmous-->
+    <h1 id="like">hello</h1>
+    <button onclick="chnage()">chnage</button>
+    <script>
+        let h1=document.querySelector("h1")
+        let btn=document.querySelector("button")
+        function change(){
+            h1.innerHTML="Good Morning"
+        }
+        btn.addEventListener("click",change)
+    </script>
+</body>
+</html>

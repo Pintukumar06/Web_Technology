@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+        #counter{
+            height: 200px;
+            width: 1500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #counter{
+            font-size: 50px;
+        }
+        section{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        button{
+            border-radius: 20px;
+            height: 40px;
+            width: 150px;
+            border: none;
+            color: white;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        #inc{
+            background-color:green;
+        }
+        #dec{
+            background-color: red;
+        }
+        #reset{
+            background-color: blue;
+        }
+    </style>
+</head> 
+<body>
+   <div id="pk">
+    <h1 id="counter">0</h1>
+
+    <section>
+        <button id="inc" onclick="inc()">increase</button>
+    <button id="dec" onclick="dec()">decrease</button>
+    <button id="reset" onclick="reset()">reset</button>
+    </section>
+   </div>
+    <script>
+        let counterCont=document.getElementById("counter")
+        let count=0;
+        function inc(){
+            count++;
+            counterCont.innerHTML=count;
+
+        }
+        function dec(){
+            if(count>0){
+                count--;
+                counterCont.innerHTML=count;
+
+            }
+          
+        }
+        function reset(){
+            count=0;
+            counterCont.innerHTML=count;
+        }
+
+    </script>
+</body>
+</html>

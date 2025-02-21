@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 10vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    #container{
+        height: 430px;
+        width: 100vw;
+        border: 1px solid;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        
+    }
+    .boxes{
+        height: 150px;
+        width: 150px;
+        border: 1px solid;
+        border-radius: 50%;
+        animation-name: google is linear infinite alternate;
+
+    }
+    .boxes:first-child{
+        background-color: blue;
+    }
+    .boxes:nth-child(2){
+        background-color: red;
+    }
+    .boxes:nth-child(3){
+        background-color: yellow;
+    }
+    .boxes:nth-child(4){
+        background-color: green;
+    }
+    .boxes:nth-child(5){
+        background-color: aqua;
+    }
+    @keyframes google{
+        10%{
+            transform: translate(0px,10px);
+        }
+        50%{
+            transform: translate(0px,30px);
+        }
+        100%{
+            transform: translate(0px,50px);
+        }
+    }
+</style>
+</head>
+<body>
+    <div id="container"></div>
+    <div class="boxes"></div>
+    <div class="boxes"></div>
+    <div class="boxes"></div>
+    <div class="boxes"></div>
+</body>
+</html>

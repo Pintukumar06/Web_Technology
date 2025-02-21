@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!-- <table>
+        <thead>
+            <tr>
+                <th>PId</th>
+                <th>PName</th>
+                <th>Price</th>
+                <th>Brand</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>phone</td>
+                <td>20000</td>
+                <td>oppo</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td>2</td>
+                <td>Phone</td>
+                <td>30000</td>
+                <td>moto</td>
+            </tr>
+        </tbody>
+    </table>-->
+
+    <script>
+      /*  let h1Tag=document.createElement("h1")
+        console.log(h1Tag);
+        h1Tag.innerHTML="Good Morning";
+        document.body.appendChild(h1Tag)
+        h1Tag.remove();
+        console.log(h1Tag);
+        */
+       //create table tag:- 
+       //creating table heading:-
+
+       let tableTag=document.createElement("table")
+       let theadTag=document.createElement("thead")
+       let trTag=document.createElement("tr")
+       let thTag1=document.createElement("th")
+       let thTag2=document.createElement("th")
+       let thTag3=document.createElement("th")
+       let thTag4=document.createElement("th")
+       //appending the th in tr:-
+       trTag.appendChild(thTag1)
+       trTag.appendChild(thTag2)
+       trTag.appendChild(thTag3)
+       trTag.appendChild(thTag4)
+       theadTag.appendChild(trTag)
+       //adding the content in th:-
+       thTag1.innerText="PId";
+       thTag2.innerText="PName";
+       thTag3.innerText="Price";
+       thTag4.innerText="Brand";
+       tbody.appendChild(td)
+       tbody.appendChild(td)
+       tbody.appendChild(td)
+       tbody.appendChild(td)
+       thTag1.innerText="PId";
+       thTag2.innerText="PName";
+       thTag3.innerText="Price";
+       thTag4.innerText="Brand";
+       tbody.appendChild(td)
+       tbody.appendChild(td)
+       tbody.appendChild(td)
+       tbody.appendChild(td)
+       tableTag.appendChild(theadTag)
+       tableTag.appendChild(tbody)
+
+
+    </script>
+</body>
+</html>

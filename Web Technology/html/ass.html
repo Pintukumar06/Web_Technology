@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Next Odd Numbers</title>
+    <style>
+        .output {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <input type="number" id="myInput">
+    <p class="output" id="result"></p>
+
+    <script>
+        const inputField = document.getElementById("myInput");
+        const resultElement = document.getElementById("result");
+
+        inputField.addEventListener("input", () => {
+            const value = parseInt(inputField.value);
+
+            if (value % 2 !== 0) { // Check if the value is odd
+                const nextOdd1 = value + 2;
+                const nextOdd2 = nextOdd1 + 2;
+                const nextOdd3 = nextOdd2 + 2;
+
+                resultElement.textContent = `Next 3 odd numbers: ${nextOdd1}, ${nextOdd2}, ${nextOdd3}`;
+            } else {
+                resultElement.textContent = "";
+            }
+        });
+    </script>
+
+</body>
+</html>

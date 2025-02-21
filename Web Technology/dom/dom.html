@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1 id="content">Hello</h1>
+   <p class="para">1</p>
+   <p class="para">2</p>
+   <p class="para">3</p>
+   <p class="para">4</p>
+   <p class="para">5</p>
+   <p class="para">6</p>
+
+   <div id="first" class="cont">div1</div>
+   <div class="cont">div2</div>
+   <div class="cont">div3</div>
+   <div class="cont">div4</div>
+   <div class="cont">div5</div>
+
+
+    <button onclick="changeContent()">change</button>
+
+    <script>
+    /*    console.log(document);
+        console.log(document.body);
+
+        let h1Tag=document.getElementById("content");
+        console.log(h1Tag);
+        h1Tag.textContent="Pintu";
+        h1Tag.textContent="Sharma";
+        h1Tag.innerText="<p>i am pintu</p>";
+        h1Tag.innerHTML="<span>Pintu sharma</span>"
+        function changeContent(){
+            h1Tag.innerHTML="Pintu kumar";
+            h1Tag.innerText="cutie";
+        } 
+        changeContent()
+      */
+
+      //selectors in js:-
+
+      //getElementById
+
+      let h1Tag=document.getElementById("content")
+      console.log(h1Tag);
+      h1Tag.innerText="Pintu";
+
+      //getElementByClassName
+
+      let paraTag=document.getElementsByClassName("para")
+      console.log(paraTag);
+      for(let i=0;i<paraTag.length;i++){
+        paraTag[i].innerText=i;
+      }
+
+      //getElementByTagName:- 
+/*
+      let divTag=document.getElementsByTagName("div")
+      console.log(divTag);
+      for(let i=0;i<divTag.length;i++){
+        divTag[i].innerHTML='<h1>good morning</h1>'
+      }
+
+      //querySelector:- 
+
+      let firstDiv=document.querySelector("div")
+      console.log(firstDiv);
+      firstDiv.innerText="i am tag";
+      
+*/
+     let allElements=document.querySelectorAll(".cont")
+     console.log(allElements);
+     allElements.forEach(node=>node.innerText="i am pintu kumar ")
+
+      
+
+
+      
+      
+    </script>
+</body>
+</html>

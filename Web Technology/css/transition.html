@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            height: 300px;
+            width: 300px;
+            border: 1px solid;
+            transition-property: all;
+            transition-duration: 2s;
+            transition-timing-function: ease;
+            transition-delay: 5s;
+        }
+        #container:hover{
+            width: 500px;
+            height: 500px;
+            background-color: red;
+
+        }
+        .boxes{
+            height: 100px;
+            width: 100px;
+            border: 1px solid;
+            background-color: green;
+            transition-property: all;
+            transition-duration: 2s;
+            transition-timing-function: ease-out;
+        }
+        .boxes:hover{
+            width: 600px;
+        }
+        .boxes:first-child{
+            transition-timing-function: linear;
+        }
+        .boxes:nth-child(2){
+            transition-timing-function: ease;
+
+        }
+        .boxes:nth-child(3){
+            transition-timing-function: ease-in;
+        }
+        .boxes:nth-child(4){
+            transition-timing-function: ease-in-out;
+
+        }
+        .boxes:nth-child(5){
+            transition-timing-function: ease-out;
+        }
+    </style>
+</head>
+<body>
+    <div id="container"></div><br><br> 
+    <div class="boxes"></div>
+    <div class="boxes"></div>
+    <div class="boxes"></div>
+    <div class="boxes"></div>
+    <div class="boxes"></div>
+</body>
+</html>

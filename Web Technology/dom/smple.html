@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="content">Initial Content</h1>
+    <button onclick="changeContent()">Change Content</button>
+    
+    <script>
+        // Log document and body to the console
+        console.log(document);
+        console.log(document.body);
+    
+        // Get the h1 element by its ID
+        let h1Tag = document.getElementById("content");
+        console.log(h1Tag);  // Log the h1 tag to the console
+    
+        // Initially setting the text content (this happens when the page loads)
+        h1Tag.textContent = "Pintu";   
+        h1Tag.textContent = "Sharma"; 
+    
+        // Demonstrating innerText and innerHTML (this is also before the button click)
+        h1Tag.innerText = "<p>i am pintu</p>";  // Will display text "<p>i am pintu</p>", not actual HTML
+        h1Tag.innerHTML = "<span>Pintu Sharma</span>"; // This will render the span tag correctly
+    
+        // Function to change the content when the button is clicked
+        function changeContent() {
+            h1Tag.innerHTML = "Pintu Kumar";  // This will update the HTML content of the h1 tag
+            h1Tag.innerText = "Cutie";        // This will update the text content of the h1 tag to "Cutie"
+        }
+    
+    </script>
+
+</body>
+</html>

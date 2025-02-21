@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        #sibofH1>h1{
+            background-color: red;
+        }
+
+        div>div>#sibofH1>h1{
+            background-color: blue;
+        }
+
+        .abc+h1{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+   <div>
+    <div>
+        <div id="childDiv">
+            <h1 class="abc">hello</h1>
+            <h1>hello</h1>
+            <h1>hello</h1>
+            <div id="sibofH1">
+                <h1>hello</h1>
+            </div>
+        </div>
+    </div>
+   </div>
+</body>
+</html>

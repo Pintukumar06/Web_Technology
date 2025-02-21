@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="themes()">dark mode</button>
+    <h1>pintu</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus tenetur quibusdam consequatur repellat nobis recusandae perferendis nesciunt quia voluptates, accusamus eius quasi dignissimos eaque officiis perspiciatis magni odit facere debitis.</p>
+    
+    <script>
+        let themeBtn=document.querySelector("button")
+      function themes(){
+        if(themeBtn.innerHTML=="dark mode"){
+        document.body.style.backgroundColor="red";
+        document.body.style.color="white";
+        themeBtn.innerText="light mode"
+        }
+        else{
+            document.body.style.backgroundColor="white"
+            document.body.style.color="red"
+            themeBtn
+        }
+
+      }
+
+
+
+    </script>
+</body>
+</html>
